@@ -1,0 +1,925 @@
+Archive member included because of file (symbol)
+
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+                              modbus/rtu/mbrtu.o (__udivmodsi4)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o (exit)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+                              libs/servo.o (__do_copy_data)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+                              runin2.o (__do_clear_bss)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+                              port/porttimer.o (__umulhisi3)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memcpy.o)
+                              modbus/functions/mbfuncother.o (memcpy)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_byte_atmega168p.o)
+                              runin2.o (__eerd_byte_m168p)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_word_atmega168p.o)
+                              runin2.o (__eerd_word_m168p)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eewr_byte_atmega168p.o)
+                              libs/pcint.o (__eewr_byte_m168p)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eewr_word_atmega168p.o)
+                              libs/pcint.o (__eewr_word_m168p)
+/usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_block_atmega168p.o)
+                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_word_atmega168p.o) (__eerd_blraw_m168p)
+
+Allocating common symbols
+Common symbol       size              file
+
+pxMBFrameCBTransmitterEmpty
+                    0x2               modbus/mb.o
+pxMBPortCBTimerExpired
+                    0x2               modbus/mb.o
+ucRTUBuf            0x100             modbus/rtu/mbrtu.o
+pxMBFrameCBByteReceived
+                    0x2               modbus/mb.o
+pxMBFrameCBTransmitFSMCur
+                    0x2               modbus/mb.o
+ucHoldingBuf        0x40              runin2.o
+pxMBFrameCBReceiveFSMCur
+                    0x2               modbus/mb.o
+ucRegCoilsBuf       0x10              runin2.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+LOAD runin2.o
+LOAD libs/relay.o
+LOAD libs/servo.o
+LOAD libs/timer0.o
+LOAD libs/pcint.o
+LOAD modbus/mb.o
+LOAD modbus/rtu/mbrtu.o
+LOAD modbus/ascii/mbascii.o
+LOAD modbus/functions/mbfunccoils.o
+LOAD modbus/functions/mbfuncdiag.o
+LOAD modbus/functions/mbfuncholding.o
+LOAD modbus/functions/mbfuncinput.o
+LOAD modbus/functions/mbfuncother.o
+LOAD modbus/functions/mbfuncdisc.o
+LOAD modbus/functions/mbutils.o
+LOAD port/portserial.o
+LOAD port/portevent.o
+LOAD port/porttimer.o
+LOAD port/mbcrc.o
+LOAD /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a
+START GROUP
+LOAD /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a
+LOAD /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libm.a
+LOAD /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a
+END GROUP
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x18c6
+ *(.vectors)
+ .vectors       0x00000000       0x68 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *(.progmem*)
+ .progmem.data  0x00000068      0x200 port/mbcrc.o
+                0x00000268                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000268                __ctors_start = .
+ *(.ctors)
+                0x00000268                __ctors_end = .
+                0x00000268                __dtors_start = .
+ *(.dtors)
+                0x00000268                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000268        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+                0x00000268                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000268        0xc /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000274       0x16 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+                0x00000274                __do_copy_data
+ .init4         0x0000028a       0x10 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+                0x0000028a                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000029a        0x8 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+ *(.init9)
+ *(.text)
+ .text          0x000002a2        0x4 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+                0x000002a2                __vector_16
+                0x000002a2                __vector_1
+                0x000002a2                __vector_24
+                0x000002a2                __vector_12
+                0x000002a2                __bad_interrupt
+                0x000002a2                __vector_6
+                0x000002a2                __vector_23
+                0x000002a2                __vector_25
+                0x000002a2                __vector_13
+                0x000002a2                __vector_17
+                0x000002a2                __vector_5
+                0x000002a2                __vector_4
+                0x000002a2                __vector_9
+                0x000002a2                __vector_2
+                0x000002a2                __vector_21
+                0x000002a2                __vector_15
+                0x000002a2                __vector_8
+                0x000002a2                __vector_10
+                0x000002a2                __vector_22
+ .text          0x000002a6      0x222 runin2.o
+                0x000002a6                SYS_init
+                0x00000384                eMBRegCoilsCB
+                0x00000422                eMBRegHoldingCB
+                0x000004c0                eMBRegDiscreteCB
+                0x000004c4                eMBRegInputCB
+ .text          0x000004c8       0x3c libs/relay.o
+                0x000004c8                RELAY_init
+                0x000004d4                RELAY_poll
+ .text          0x00000504      0x2c2 libs/servo.o
+                0x00000504                SERVO_enable
+                0x00000508                SERVO_init
+                0x00000530                SERVO_disable
+                0x00000534                SERVO_get_position
+                0x0000053e                SERVO_calib
+                0x00000550                SERVO_send_pulse
+                0x000005a2                SERVO_set_position
+                0x00000606                SERVO_poll
+                0x00000670                timer0_isr
+                0x000006fc                timer2_isr
+ .text          0x000007c6      0x118 libs/timer0.o
+                0x000007c6                timer2_init
+                0x000007f0                timer2_enable
+                0x000007fc                timer2_disable
+                0x00000808                timer0_enable
+                0x00000824                timer0_disable
+                0x00000830                timer0_comp_init
+                0x0000084e                __vector_14
+                0x00000896                __vector_7
+ .text          0x000008de       0xc0 libs/pcint.o
+                0x000008de                PCINT_init
+                0x000008fc                __vector_3
+ .text          0x0000099e      0x2d2 modbus/mb.o
+                0x0000099e                eMBInit
+                0x00000a50                eMBRegisterCB
+                0x00000ade                eMBClose
+                0x00000afe                eMBEnable
+                0x00000b1c                eMBDisable
+                0x00000b42                eMBPoll
+ .text          0x00000c70      0x2ea modbus/rtu/mbrtu.o
+                0x00000c70                eMBRTUInit
+                0x00000cde                eMBRTUStart
+                0x00000cf4                eMBRTUStop
+                0x00000d06                eMBRTUReceive
+                0x00000d70                eMBRTUSend
+                0x00000e10                xMBRTUReceiveFSM
+                0x00000ea8                xMBRTUTransmitFSM
+                0x00000f20                xMBRTUTimerT35Expired
+ .text          0x00000f5a        0x0 modbus/ascii/mbascii.o
+ .text          0x00000f5a      0x188 modbus/functions/mbfunccoils.o
+                0x00000f5a                eMBFuncReadCoils
+                0x00000ffe                eMBFuncWriteCoil
+                0x00001066                eMBFuncWriteMultipleCoils
+ .text          0x000010e2        0x0 modbus/functions/mbfuncdiag.o
+ .text          0x000010e2      0x226 modbus/functions/mbfuncholding.o
+                0x000010e2                eMBFuncWriteHoldingRegister
+                0x0000111c                eMBFuncWriteMultipleHoldingRegister
+                0x00001182                eMBFuncReadHoldingRegister
+                0x0000120e                eMBFuncReadWriteMultipleHoldingRegister
+ .text          0x00001308        0x0 modbus/functions/mbfuncinput.o
+ .text          0x00001308       0x88 modbus/functions/mbfuncother.o
+                0x00001308                eMBSetSlaveID
+                0x0000135e                eMBFuncReportSlaveID
+ .text          0x00001390       0xa2 modbus/functions/mbfuncdisc.o
+                0x00001390                eMBFuncReadDiscreteInputs
+ .text          0x00001432       0xc4 modbus/functions/mbutils.o
+                0x00001432                xMBUtilSetBits
+                0x0000149a                xMBUtilGetBits
+                0x000014e2                prveMBError2Exception
+ .text          0x000014f6      0x182 port/portserial.o
+                0x000014f6                vMBPortSerialEnable
+                0x00001530                xMBPortSerialInit
+                0x000015b2                xMBPortSerialPutByte
+                0x000015ba                xMBPortSerialGetByte
+                0x000015c6                __vector_19
+                0x00001614                __vector_18
+                0x00001662                __vector_20
+ .text          0x00001678       0x32 port/portevent.o
+                0x00001678                xMBPortEventInit
+                0x00001680                xMBPortEventPost
+                0x0000168e                xMBPortEventGet
+ .text          0x000016aa       0xd2 port/porttimer.o
+                0x000016aa                vMBPortTimersEnable
+                0x000016e4                vMBPortTimersDisable
+                0x000016fc                xMBPortTimersInit
+                0x0000172e                __vector_11
+ .text          0x0000177c       0x4a port/mbcrc.o
+                0x0000177c                usMBCRC16
+ .text          0x000017c6        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x000017c6        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text          0x000017c6        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text          0x000017c6        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text          0x000017c6        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .text          0x000017c6        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memcpy.o)
+ .text          0x000017c6        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_byte_atmega168p.o)
+ .text          0x000017c6        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_word_atmega168p.o)
+ .text          0x000017c6        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eewr_byte_atmega168p.o)
+ .text          0x000017c6        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eewr_word_atmega168p.o)
+ .text          0x000017c6        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_block_atmega168p.o)
+                0x000017c6                . = ALIGN (0x2)
+ *(.text.*)
+ .text.startup  0x000017c6       0x26 runin2.o
+                0x000017c6                main
+ .text.libgcc.mul
+                0x000017ec        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.div
+                0x000017ec       0x44 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+                0x000017ec                __udivmodsi4
+ .text.libgcc   0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00001830        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00001830       0x1e /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+                0x00001830                __umulhisi3
+ .text.libgcc.div
+                0x0000184e        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x0000184e        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x0000184e        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x0000184e        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x0000184e        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x0000184e        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .text.avr-libc
+                0x0000184e       0x12 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memcpy.o)
+                0x0000184e                memcpy
+ .text.avr-libc
+                0x00001860       0x10 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_byte_atmega168p.o)
+                0x00001860                __eerd_byte_m168p
+ .text.avr-libc
+                0x00001870        0xc /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_word_atmega168p.o)
+                0x00001870                __eerd_word_m168p
+ .text.avr-libc
+                0x0000187c       0x1c /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eewr_byte_atmega168p.o)
+                0x0000187c                __eewr_byte_m168p
+                0x0000187e                __eewr_r18_m168p
+ .text.avr-libc
+                0x00001898        0xa /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eewr_word_atmega168p.o)
+                0x00001898                __eewr_word_m168p
+ .text.avr-libc
+                0x000018a2       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_block_atmega168p.o)
+                0x000018a2                __eerd_block_m168p
+                0x000018a6                __eerd_blraw_m168p
+                0x000018c2                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000018c2        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+                0x000018c2                exit
+                0x000018c2                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000018c2        0x4 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x000018c6                _etext = .
+
+.data           0x00800100       0x3a load address 0x000018c6
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+ .data          0x00800100        0x0 runin2.o
+ .data          0x00800100        0x0 libs/relay.o
+ .data          0x00800100        0x1 libs/servo.o
+ .data          0x00800101        0x0 libs/timer0.o
+ .data          0x00800101        0x0 libs/pcint.o
+ .data          0x00800101       0x31 modbus/mb.o
+ .data          0x00800132        0x0 modbus/rtu/mbrtu.o
+ .data          0x00800132        0x0 modbus/ascii/mbascii.o
+ .data          0x00800132        0x0 modbus/functions/mbfunccoils.o
+ .data          0x00800132        0x0 modbus/functions/mbfuncdiag.o
+ .data          0x00800132        0x0 modbus/functions/mbfuncholding.o
+ .data          0x00800132        0x0 modbus/functions/mbfuncinput.o
+ .data          0x00800132        0x0 modbus/functions/mbfuncother.o
+ .data          0x00800132        0x0 modbus/functions/mbfuncdisc.o
+ .data          0x00800132        0x0 modbus/functions/mbutils.o
+ .data          0x00800132        0x0 port/portserial.o
+ .data          0x00800132        0x0 port/portevent.o
+ .data          0x00800132        0x0 port/porttimer.o
+ .data          0x00800132        0x0 port/mbcrc.o
+ .data          0x00800132        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x00800132        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .data          0x00800132        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .data          0x00800132        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .data          0x00800132        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .data          0x00800132        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memcpy.o)
+ .data          0x00800132        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_byte_atmega168p.o)
+ .data          0x00800132        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_word_atmega168p.o)
+ .data          0x00800132        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eewr_byte_atmega168p.o)
+ .data          0x00800132        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eewr_word_atmega168p.o)
+ .data          0x00800132        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_block_atmega168p.o)
+ *(.data*)
+ *(.rodata)
+ .rodata        0x00800132        0x8 modbus/functions/mbutils.o
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0080013a                . = ALIGN (0x2)
+                0x0080013a                _edata = .
+                0x0080013a                PROVIDE (__data_end, .)
+
+.bss            0x0080013a      0x1b3
+                0x0080013a                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0080013a        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+ .bss           0x0080013a        0x7 runin2.o
+ .bss           0x00800141        0x2 libs/relay.o
+ .bss           0x00800143        0xa libs/servo.o
+ .bss           0x0080014d        0x0 libs/timer0.o
+ .bss           0x0080014d        0x5 libs/pcint.o
+ .bss           0x00800152       0x13 modbus/mb.o
+ .bss           0x00800165        0x8 modbus/rtu/mbrtu.o
+ .bss           0x0080016d        0x0 modbus/ascii/mbascii.o
+ .bss           0x0080016d        0x0 modbus/functions/mbfunccoils.o
+ .bss           0x0080016d        0x0 modbus/functions/mbfuncdiag.o
+ .bss           0x0080016d        0x0 modbus/functions/mbfuncholding.o
+ .bss           0x0080016d        0x0 modbus/functions/mbfuncinput.o
+ .bss           0x0080016d       0x22 modbus/functions/mbfuncother.o
+ .bss           0x0080018f        0x0 modbus/functions/mbfuncdisc.o
+ .bss           0x0080018f        0x0 modbus/functions/mbutils.o
+ .bss           0x0080018f        0x0 port/portserial.o
+ .bss           0x0080018f        0x2 port/portevent.o
+ .bss           0x00800191        0x2 port/porttimer.o
+ .bss           0x00800193        0x0 port/mbcrc.o
+ .bss           0x00800193        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x00800193        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .bss           0x00800193        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .bss           0x00800193        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x00800193        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ .bss           0x00800193        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memcpy.o)
+ .bss           0x00800193        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_byte_atmega168p.o)
+ .bss           0x00800193        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_word_atmega168p.o)
+ .bss           0x00800193        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eewr_byte_atmega168p.o)
+ .bss           0x00800193        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eewr_word_atmega168p.o)
+ .bss           0x00800193        0x0 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_block_atmega168p.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800193       0x50 runin2.o
+                0x00800193                ucHoldingBuf
+                0x008001d3                ucRegCoilsBuf
+ COMMON         0x008001e3        0xa modbus/mb.o
+                0x008001e3                pxMBFrameCBTransmitterEmpty
+                0x008001e5                pxMBPortCBTimerExpired
+                0x008001e7                pxMBFrameCBByteReceived
+                0x008001e9                pxMBFrameCBTransmitFSMCur
+                0x008001eb                pxMBFrameCBReceiveFSMCur
+ COMMON         0x008001ed      0x100 modbus/rtu/mbrtu.o
+                0x008001ed                ucRTUBuf
+                0x008002ed                PROVIDE (__bss_end, .)
+                0x000018c6                __data_load_start = LOADADDR (.data)
+                0x00001900                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008002ed        0x0
+                0x008002ed                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008002ed                PROVIDE (__noinit_end, .)
+                0x008002ed                _end = .
+                0x008002ed                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab           0x00000000      0x4f8
+ *(.stab)
+ .stab          0x00000000      0x4f8 port/mbcrc.o
+
+.stabstr        0x00000000      0x93c
+ *(.stabstr)
+ .stabstr       0x00000000      0x93c port/mbcrc.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x11
+ *(.comment)
+ .comment       0x00000000       0x11 runin2.o
+                                 0x12 (size before relaxing)
+ .comment       0x00000000       0x12 libs/relay.o
+ .comment       0x00000000       0x12 libs/servo.o
+ .comment       0x00000000       0x12 libs/timer0.o
+ .comment       0x00000000       0x12 libs/pcint.o
+ .comment       0x00000000       0x12 modbus/mb.o
+ .comment       0x00000000       0x12 modbus/rtu/mbrtu.o
+ .comment       0x00000000       0x12 modbus/ascii/mbascii.o
+ .comment       0x00000000       0x12 modbus/functions/mbfunccoils.o
+ .comment       0x00000000       0x12 modbus/functions/mbfuncdiag.o
+ .comment       0x00000000       0x12 modbus/functions/mbfuncholding.o
+ .comment       0x00000000       0x12 modbus/functions/mbfuncinput.o
+ .comment       0x00000000       0x12 modbus/functions/mbfuncother.o
+ .comment       0x00000000       0x12 modbus/functions/mbfuncdisc.o
+ .comment       0x00000000       0x12 modbus/functions/mbutils.o
+ .comment       0x00000000       0x12 port/portserial.o
+ .comment       0x00000000       0x12 port/portevent.o
+ .comment       0x00000000       0x12 port/porttimer.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0xa0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .debug_aranges
+                0x00000020       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .debug_aranges
+                0x00000040       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .debug_aranges
+                0x00000060       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .debug_aranges
+                0x00000080       0x20 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000      0x3b6
+ *(.debug_info)
+ .debug_info    0x00000000       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .debug_info    0x000000be       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .debug_info    0x0000017c       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .debug_info    0x0000023a       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .debug_info    0x000002f8       0xbe /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000       0x64
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .debug_abbrev  0x00000014       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .debug_abbrev  0x00000028       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .debug_abbrev  0x0000003c       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .debug_abbrev  0x00000050       0x14 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+
+.debug_line     0x00000000      0x1f4
+ *(.debug_line)
+ .debug_line    0x00000000       0x78 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+ .debug_line    0x00000078       0x58 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+ .debug_line    0x000000d0       0x61 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+ .debug_line    0x00000131       0x5e /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+ .debug_line    0x0000018f       0x65 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(Builds/runin2.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+PCINT_init                                        libs/pcint.o
+                                                  runin2.o
+RELAY_init                                        libs/relay.o
+                                                  runin2.o
+RELAY_poll                                        libs/relay.o
+                                                  runin2.o
+SERVO_calib                                       libs/servo.o
+                                                  libs/pcint.o
+SERVO_disable                                     libs/servo.o
+SERVO_enable                                      libs/servo.o
+                                                  runin2.o
+SERVO_get_position                                libs/servo.o
+SERVO_init                                        libs/servo.o
+                                                  runin2.o
+SERVO_poll                                        libs/servo.o
+                                                  runin2.o
+SERVO_send_pulse                                  libs/servo.o
+SERVO_set_position                                libs/servo.o
+SYS_init                                          runin2.o
+__bad_interrupt                                   /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__bss_end                                         /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+__data_start                                      /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+__do_clear_bss                                    /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_clear_bss.o)
+                                                  port/mbcrc.o
+                                                  port/porttimer.o
+                                                  port/portevent.o
+                                                  modbus/functions/mbfuncother.o
+                                                  modbus/rtu/mbrtu.o
+                                                  modbus/mb.o
+                                                  libs/pcint.o
+                                                  libs/servo.o
+                                                  libs/relay.o
+                                                  runin2.o
+__do_copy_data                                    /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_copy_data.o)
+                                                  port/mbcrc.o
+                                                  modbus/functions/mbutils.o
+                                                  modbus/mb.o
+                                                  libs/servo.o
+__eerd_block_m168p                                /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_block_atmega168p.o)
+__eerd_blraw_m168p                                /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_block_atmega168p.o)
+                                                  /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_word_atmega168p.o)
+__eerd_byte_m168p                                 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_byte_atmega168p.o)
+                                                  runin2.o
+__eerd_word_m168p                                 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eerd_word_atmega168p.o)
+                                                  runin2.o
+__eewr_byte_m168p                                 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eewr_byte_atmega168p.o)
+                                                  /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eewr_word_atmega168p.o)
+                                                  libs/pcint.o
+__eewr_r18_m168p                                  /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eewr_byte_atmega168p.o)
+                                                  /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eewr_word_atmega168p.o)
+__eewr_word_m168p                                 /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(eewr_word_atmega168p.o)
+                                                  libs/pcint.o
+__heap_end                                        /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__init                                            /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__stack                                           /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__udivmodsi4                                      /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_udivmodsi4.o)
+                                                  port/porttimer.o
+                                                  port/portserial.o
+                                                  modbus/rtu/mbrtu.o
+__umulhisi3                                       /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_umulhisi3.o)
+                                                  port/porttimer.o
+__vector_1                                        /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_10                                       /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_11                                       port/porttimer.o
+                                                  /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_12                                       /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_13                                       /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_14                                       libs/timer0.o
+                                                  /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_15                                       /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_16                                       /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_17                                       /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_18                                       port/portserial.o
+                                                  /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_19                                       port/portserial.o
+                                                  /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_2                                        /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_20                                       port/portserial.o
+                                                  /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_21                                       /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_22                                       /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_23                                       /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_24                                       /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_25                                       /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_3                                        libs/pcint.o
+                                                  /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_4                                        /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_5                                        /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_6                                        /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_7                                        libs/timer0.o
+                                                  /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_8                                        /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_9                                        /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vector_default                                  /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+__vectors                                         /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+_exit                                             /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+eMBClose                                          modbus/mb.o
+eMBDisable                                        modbus/mb.o
+eMBEnable                                         modbus/mb.o
+                                                  runin2.o
+eMBFuncReadCoils                                  modbus/functions/mbfunccoils.o
+                                                  modbus/mb.o
+eMBFuncReadDiscreteInputs                         modbus/functions/mbfuncdisc.o
+eMBFuncReadHoldingRegister                        modbus/functions/mbfuncholding.o
+                                                  modbus/mb.o
+eMBFuncReadWriteMultipleHoldingRegister           modbus/functions/mbfuncholding.o
+                                                  modbus/mb.o
+eMBFuncReportSlaveID                              modbus/functions/mbfuncother.o
+                                                  modbus/mb.o
+eMBFuncWriteCoil                                  modbus/functions/mbfunccoils.o
+                                                  modbus/mb.o
+eMBFuncWriteHoldingRegister                       modbus/functions/mbfuncholding.o
+                                                  modbus/mb.o
+eMBFuncWriteMultipleCoils                         modbus/functions/mbfunccoils.o
+                                                  modbus/mb.o
+eMBFuncWriteMultipleHoldingRegister               modbus/functions/mbfuncholding.o
+                                                  modbus/mb.o
+eMBInit                                           modbus/mb.o
+                                                  runin2.o
+eMBPoll                                           modbus/mb.o
+                                                  runin2.o
+eMBRTUInit                                        modbus/rtu/mbrtu.o
+                                                  modbus/mb.o
+eMBRTUReceive                                     modbus/rtu/mbrtu.o
+                                                  modbus/mb.o
+eMBRTUSend                                        modbus/rtu/mbrtu.o
+                                                  modbus/mb.o
+eMBRTUStart                                       modbus/rtu/mbrtu.o
+                                                  modbus/mb.o
+eMBRTUStop                                        modbus/rtu/mbrtu.o
+                                                  modbus/mb.o
+eMBRegCoilsCB                                     runin2.o
+                                                  modbus/functions/mbfunccoils.o
+eMBRegDiscreteCB                                  runin2.o
+                                                  modbus/functions/mbfuncdisc.o
+eMBRegHoldingCB                                   runin2.o
+                                                  modbus/functions/mbfuncholding.o
+eMBRegInputCB                                     runin2.o
+eMBRegisterCB                                     modbus/mb.o
+eMBSetSlaveID                                     modbus/functions/mbfuncother.o
+exit                                              /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/avr5/libgcc.a(_exit.o)
+                                                  /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+main                                              runin2.o
+                                                  /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/crtm168p.o
+memcpy                                            /usr/local/CrossPack-AVR-20131216/lib/gcc/avr/4.8.1/../../../../avr/lib/avr5/libc.a(memcpy.o)
+                                                  modbus/functions/mbfuncother.o
+prveMBError2Exception                             modbus/functions/mbutils.o
+                                                  modbus/functions/mbfuncdisc.o
+                                                  modbus/functions/mbfuncholding.o
+                                                  modbus/functions/mbfunccoils.o
+pxMBFrameCBByteReceived                           port/portserial.o
+                                                  modbus/mb.o
+pxMBFrameCBReceiveFSMCur                          modbus/mb.o
+pxMBFrameCBTransmitFSMCur                         modbus/mb.o
+pxMBFrameCBTransmitterEmpty                       port/portserial.o
+                                                  modbus/mb.o
+pxMBPortCBTimerExpired                            port/porttimer.o
+                                                  modbus/mb.o
+timer0_comp_init                                  libs/timer0.o
+                                                  libs/servo.o
+timer0_disable                                    libs/timer0.o
+                                                  libs/servo.o
+timer0_enable                                     libs/timer0.o
+                                                  libs/servo.o
+timer0_isr                                        libs/servo.o
+                                                  libs/timer0.o
+timer2_disable                                    libs/timer0.o
+timer2_enable                                     libs/timer0.o
+                                                  libs/servo.o
+timer2_init                                       libs/timer0.o
+                                                  libs/servo.o
+timer2_isr                                        libs/servo.o
+                                                  libs/timer0.o
+ucHoldingBuf                                      libs/pcint.o
+                                                  libs/servo.o
+                                                  runin2.o
+ucRTUBuf                                          modbus/rtu/mbrtu.o
+ucRegCoilsBuf                                     libs/pcint.o
+                                                  libs/servo.o
+                                                  runin2.o
+usMBCRC16                                         port/mbcrc.o
+                                                  modbus/rtu/mbrtu.o
+vMBPortSerialEnable                               port/portserial.o
+                                                  modbus/rtu/mbrtu.o
+vMBPortTimersDisable                              port/porttimer.o
+                                                  modbus/rtu/mbrtu.o
+vMBPortTimersEnable                               port/porttimer.o
+                                                  modbus/rtu/mbrtu.o
+xMBPortEventGet                                   port/portevent.o
+                                                  modbus/mb.o
+xMBPortEventInit                                  port/portevent.o
+                                                  modbus/mb.o
+xMBPortEventPost                                  port/portevent.o
+                                                  modbus/rtu/mbrtu.o
+                                                  modbus/mb.o
+xMBPortSerialGetByte                              port/portserial.o
+                                                  modbus/rtu/mbrtu.o
+xMBPortSerialInit                                 port/portserial.o
+                                                  modbus/rtu/mbrtu.o
+xMBPortSerialPutByte                              port/portserial.o
+                                                  modbus/rtu/mbrtu.o
+xMBPortTimersInit                                 port/porttimer.o
+                                                  modbus/rtu/mbrtu.o
+xMBRTUReceiveFSM                                  modbus/rtu/mbrtu.o
+                                                  modbus/mb.o
+xMBRTUTimerT35Expired                             modbus/rtu/mbrtu.o
+                                                  modbus/mb.o
+xMBRTUTransmitFSM                                 modbus/rtu/mbrtu.o
+                                                  modbus/mb.o
+xMBUtilGetBits                                    modbus/functions/mbutils.o
+                                                  runin2.o
+xMBUtilSetBits                                    modbus/functions/mbutils.o
+                                                  runin2.o
